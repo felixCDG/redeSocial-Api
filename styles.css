@@ -36,7 +36,7 @@ footer {
 /* Logo */
 .logo {
     position: absolute;
-    left: -10px;
+    left: 0px;
     top: 50%;
     transform: translateY(-50%);
     width: 600px;
@@ -49,29 +49,30 @@ footer {
 .title {
     font-size: 60px;
     color: #4b166b;
-    margin-top: 15px;
-    margin-left: 350px;
+    margin-left: 410px;
+    margin-bottom: 20px;
 }
 
 /* Card de cadastro */
 .card {
     background: #ddd;
-    margin-left: 350px;
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-left: 410px;
+    margin-bottom: 10px;
+    /* padding: 20px; */
     border-radius: 10px;
-    width: 350px;
+    width: 300px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    /* margin-bottom: 20px; */
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 /* Campos de input */
 .input-field {
-    width: 80%;
+    width: 250px;
     padding: 10px;
     margin: 10px 0;
     border: none;
@@ -87,40 +88,9 @@ footer {
     color: white;
     border: none;
     padding: 10px;
-    width: 70%;
+    width: 200;
     border-radius: 5px;
     font-size: 18px;
     margin-top: 10px;
     cursor: pointer;
-}
-
-/* Botões de login social */
-.google, .apple {
-    background-color: #4b166b;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.google::before {
-    content: 'G ';
-    font-weight: bold;
-    margin-right: 10px;
-    color: #fff;
-}
-
-.apple::before {
-    content: '\f8ff ';
-    font-weight: bold;
-    margin-right: 10px;
-    color: #fff;
-    font-family: "Arial", sans-serif;
 }

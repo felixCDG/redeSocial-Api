@@ -1,54 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
-    background: #f5f5f5;
+    background: #ffffff;
+    
+
 }
 
 .container {
     display: flex;
     width: 100%;
+    height: 100vh;
+    justify-content: start;
 }
 
-.sidebar {
+.lateral {
     width: 250px;
-    background: #4c237e;
-    color: white;
-    height: 100vh;
-    padding: 20px;
+    background: #ffffff;
+    color: rgb(76, 7, 97);
+    height: 100%;
+    padding: 13px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.sidebar .logo {
+.lateral .logo {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
 
-.sidebar nav ul {
+.lateral nav ul {
     list-style: none;
-    padding: 0;
+    /* padding: 13; */
 }
 
-.sidebar nav ul li {
+.lateral nav ul li {
     margin: 20px 0;
 }
 
-.sidebar nav ul li a {
+.lateral nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
+    padding: 7px;
     align-items: center;
 }
 
-.sidebar nav ul li img {
+.lateral nav ul li img {
     width: 20px;
     margin-right: 10px;
 }
 
-.perfil-btn {
+.botao {
     display: flex;
     align-items: center;
     background: #6d2fb8;
@@ -59,27 +70,52 @@ body {
     text-align: center;
 }
 
-.perfil-btn img {
+.botao img {
     width: 20px;
     margin-right: 10px;
 }
+/* main{
+    background-color: #6d2fb8;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    
+} */
 
 .profile {
     flex: 1;
     text-align: center;
-    padding: 40px;
-    background: white;
+    padding: 0px;
+    background: #e6e6e6;
+    height: 100%;
 }
 
 .profile header {
     background: #e6e6e6;
-    padding: 20px;
-    border-radius: 10px;
+    padding:10px;
+    bottom: 200px;
+    /* border-radius: 10px; */
+
+}
+.profile h2{
+    font-family: "Jockey One", sans-serif;
+    font-size: 70px;
+    color: rgb(76, 7, 97);
 }
 
-.profile-pic img {
+.stats h3, p{
+    font-family: "Jockey One", sans-serif;
+    color:rgb(76, 7, 97);
+}
+.stats h3{
+    display: flex;
+    /* padding-bottom: 200px; */
+}
+
+.profile-ft img {
     width: 100px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    padding-top: 0px;
 }
 
 .stats {
@@ -97,15 +133,18 @@ body {
     margin-top: 10px;
 }
 
-.gallery {
+.fotos {
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    /* justify-content: space-between; */
+    /* margin-top: 30px; */
+    /* width: 200px;
+    height: 300px; */
 }
 
 .image-card img {
-    width: 100px;
-    margin: 10px;
+    width: 350px;
+    height: 225px;
+    margin: 0px;
 }
 
 

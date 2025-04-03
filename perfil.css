@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #4c237e;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.perfil-btn {
+    display: flex;
+    align-items: center;
+    background: #6d2fb8;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.perfil-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.profile {
+    flex: 1;
+    text-align: center;
+    padding: 40px;
+    background: white;
+}
+
+.profile header {
+    background: #e6e6e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-pic img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.username {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image-card img {
+    width: 100px;
+    margin: 10px;
+}
+
+

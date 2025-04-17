@@ -33,8 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
             const result = await response.json();
 
             if (response.ok) {
-                alert("Login realizado com sucesso!");
-            } else {
+                alert("Login realizado com sucesso!")
+                localStorage.setItem('userId', result.user.id)
+                console.log(result.user.id);
+                
+                window.location.href = 'perfil.html'
+            } else {        
                 alert("Erro ao Logar: " + result.message);
             }
         } catch (error) {

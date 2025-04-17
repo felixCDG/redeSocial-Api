@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const result = await response.json();
 
             if (response.ok) {
-                alert("Cadastro realizado com sucesso!");
+                alert("Cadastro realizado com sucesso!")
+                window.location.href = 'index.html'
             } else {
                 alert("Erro ao cadastrar: " + result.message);
             }

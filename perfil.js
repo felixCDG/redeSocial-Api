@@ -51,6 +51,11 @@ const loaderPerfil = async () => {
             const imgElement = document.querySelector('.profile-ft img');
             imgElement.src = usuario.imagemPerfil;
         }
+
+        if (usuario && usuario.imagemPerfil) {
+            const imgElement = document.querySelector('.profile-img-lateral img');
+            imgElement.src = usuario.imagemPerfil;
+        }
         
         if (usuario.nome) {
             const nomeElement = document.querySelector('.username');
@@ -69,18 +74,20 @@ const loaderPerfil = async () => {
 
         // Seleciona a área onde os posts serão exibidos
         const fotosContainer = document.querySelector('.fotos');
-        fotosContainer.innerHTML = ''; // limpa os posts padrão
+       
 
         // Renderiza os posts
         meusPosts.forEach(post => {
             const div = document.createElement('div');
             div.classList.add('image-card');
 
-            const img = document.createElement('img');
+            const img = document.createElement('image-card img');
             img.src = post.imagem; // substitua "imagem" pelo campo real, caso tenha outro nome
 
             div.appendChild(img);
             fotosContainer.appendChild(div);
+
+            console.log(meusPosts)
         });
 
 
